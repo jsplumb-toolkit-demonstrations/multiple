@@ -108,16 +108,12 @@
         var rendererSpecs = {
             "hierarchical":{
                 type: "Hierarchical",
-                parameters: {
-                    orientation: "horizontal",
-                    padding: [60, 60]
-                }
+                orientation: "horizontal",
+                padding: [60, 60]
             },
             "circular":{
                 type: "Circular",
-                parameters: {
-                    padding: 30
-                }
+                padding: 30
             },
             "spring":{
                 type:"Spring",
