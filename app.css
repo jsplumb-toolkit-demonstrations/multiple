@@ -42,3 +42,12 @@
 }
 
 
+.jtk-connector path {
+    stroke-width: 1;
+    stroke: #89bcde;
+}
+
+.jtk-connector.jtk-hover path {
+    stroke-width: 2;
+    stroke: #FF6600;
+}
