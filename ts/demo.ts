@@ -1,20 +1,23 @@
 import {
-    ready,
-    newInstance,
     EVENT_TAP,
     EVENT_CLICK,
     EVENT_CANVAS_CLICK,
-    EVENT_SURFACE_MODE_CHANGED
+    EVENT_SURFACE_MODE_CHANGED, SurfaceMode
 } from "@jsplumbtoolkit/browser-ui"
+import { AnchorLocations, DotEndpoint } from "@jsplumb/core"
 import {randomHierarchy, randomNode} from "@jsplumb/toolkit-demo-support"
-import {MiniviewPlugin} from "@jsplumbtoolkit/plugin-miniview"
+import {MiniviewPlugin} from "@jsplumbtoolkit/browser-ui-plugin-miniview"
 import {StateMachineConnector} from "@jsplumb/connector-bezier"
-import {AnchorLocations, DotEndpoint} from "@jsplumb/core"
 import {ObjectInfo, Node} from "@jsplumbtoolkit/core"
 import {HierarchicalLayout, BalloonLayout} from "@jsplumbtoolkit/layout-hierarchical"
 import {CircularLayout} from "@jsplumbtoolkit/layout-circular"
 import {SpringLayout} from "@jsplumbtoolkit/layout-spring"
-import {LassoPlugin} from "@jsplumbtoolkit/plugin-lasso"
+import {LassoPlugin} from "@jsplumbtoolkit/browser-ui-plugin-lasso"
+
+import {
+    ready,
+    newInstance
+} from "@jsplumbtoolkit/browser-ui-vanilla"
 
 ready(() =>{
 
@@ -33,12 +36,12 @@ ready(() =>{
         const surface = toolkit.render(document.querySelector(selector), {
             layout: layoutParams,
             events:{
-                [EVENT_SURFACE_MODE_CHANGED] :function (mode) {
+                [EVENT_SURFACE_MODE_CHANGED] :(mode:SurfaceMode) => {
                     surface.removeClass(controls.querySelectorAll(selector + " [mode]"), "selected-mode");
                     surface.addClass(controls.querySelectorAll(selector + " [mode='" + mode + "']"), "selected-mode");
                 },
-                [EVENT_CANVAS_CLICK]: function () {
-                    toolkit.clearSelection();
+                [EVENT_CANVAS_CLICK]: () => {
+                    toolkit.clearSelection()
                 }
             },
             plugins:[
