@@ -4,7 +4,8 @@ import {
     EVENT_CANVAS_CLICK,
     EVENT_SURFACE_MODE_CHANGED, SurfaceMode
 } from "@jsplumbtoolkit/browser-ui"
-import { AnchorLocations, DotEndpoint } from "@jsplumb/core"
+import { DotEndpoint } from "@jsplumb/core"
+import { AnchorLocations } from "@jsplumb/common"
 import {randomHierarchy, randomNode} from "@jsplumb/toolkit-demo-support"
 import {MiniviewPlugin} from "@jsplumbtoolkit/browser-ui-plugin-miniview"
 import {StateMachineConnector} from "@jsplumb/connector-bezier"
