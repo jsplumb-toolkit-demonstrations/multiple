@@ -6,7 +6,7 @@ import {
 } from "@jsplumbtoolkit/browser-ui"
 import { DotEndpoint } from "@jsplumb/core"
 import { AnchorLocations } from "@jsplumb/common"
-import {randomHierarchy, randomNode} from "@jsplumb/toolkit-demo-support"
+import {randomHierarchy, randomNode} from "jsplumbtoolkit-demo-support"
 import {MiniviewPlugin} from "@jsplumbtoolkit/browser-ui-plugin-miniview"
 import {StateMachineConnector} from "@jsplumb/connector-bezier"
 import {ObjectInfo, Node} from "@jsplumbtoolkit/core"
