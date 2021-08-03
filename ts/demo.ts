@@ -5,8 +5,10 @@ import {
     EVENT_SURFACE_MODE_CHANGED,
     SurfaceMode,
     DotEndpoint,
-    AnchorLocations
-} from "@jsplumbtoolkit/browser-ui"
+    AnchorLocations,
+    ready,
+    newInstance
+} from "@jsplumbtoolkit/browser-ui-vanilla"
 
 import {randomHierarchy, randomNode} from "jsplumbtoolkit-demo-support"
 import {MiniviewPlugin} from "@jsplumbtoolkit/browser-ui-plugin-miniview"
@@ -16,11 +18,6 @@ import {HierarchicalLayout, BalloonLayout} from "@jsplumbtoolkit/layout-hierarch
 import {CircularLayout} from "@jsplumbtoolkit/layout-circular"
 import {SpringLayout} from "@jsplumbtoolkit/layout-spring"
 import {LassoPlugin} from "@jsplumbtoolkit/browser-ui-plugin-lasso"
-
-import {
-    ready,
-    newInstance
-} from "@jsplumbtoolkit/browser-ui-vanilla"
 
 ready(() =>{
 
