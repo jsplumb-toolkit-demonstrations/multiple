@@ -2,10 +2,12 @@ import {
     EVENT_TAP,
     EVENT_CLICK,
     EVENT_CANVAS_CLICK,
-    EVENT_SURFACE_MODE_CHANGED, SurfaceMode
+    EVENT_SURFACE_MODE_CHANGED,
+    SurfaceMode,
+    DotEndpoint,
+    AnchorLocations
 } from "@jsplumbtoolkit/browser-ui"
-import { DotEndpoint } from "@jsplumb/core"
-import { AnchorLocations } from "@jsplumb/common"
+
 import {randomHierarchy, randomNode} from "jsplumbtoolkit-demo-support"
 import {MiniviewPlugin} from "@jsplumbtoolkit/browser-ui-plugin-miniview"
 import {StateMachineConnector} from "@jsplumb/connector-bezier"
