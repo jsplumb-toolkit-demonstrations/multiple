@@ -8,7 +8,7 @@ import {
     AnchorLocations,
     ready,
     newInstance
-} from "@jsplumbtoolkit/browser-ui-vanilla"
+} from "@jsplumbtoolkit/browser-ui-vanilla-2"
 
 import {randomHierarchy, randomNode} from "jsplumbtoolkit-demo-support"
 import {MiniviewPlugin} from "@jsplumbtoolkit/browser-ui-plugin-miniview"
@@ -16,7 +16,7 @@ import {StateMachineConnector} from "@jsplumb/connector-bezier"
 import {ObjectInfo, Node} from "@jsplumbtoolkit/core"
 import {HierarchicalLayout, BalloonLayout} from "@jsplumbtoolkit/layout-hierarchical"
 import {CircularLayout} from "@jsplumbtoolkit/layout-circular"
-import {SpringLayout} from "@jsplumbtoolkit/layout-spring"
+import {ForceDirectedLayout} from "@jsplumbtoolkit/layout-force-directed"
 import {LassoPlugin} from "@jsplumbtoolkit/browser-ui-plugin-lasso"
 
 ready(() =>{
@@ -109,8 +109,8 @@ ready(() =>{
             type: CircularLayout.type,
             padding: 30
         },
-        "spring":{
-            type:SpringLayout.type,
+        "force-directed":{
+            type:ForceDirectedLayout.type,
             absoluteBacked:false
         },
         "balloon":{

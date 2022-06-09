@@ -13,8 +13,8 @@
 
         <!-- content -->
         <script type="jtk" id="jtk-template-default">
-            <div style="width:${w}px;height:${h}px;">
-                ${name}
+            <div style="width:{{w}}px;height:{{h}}px;">
+                {{name}}
                 <div class="delete" title="Click to delete"/>
                 <div class="add" title="Add child node"/>
             </div>
@@ -43,14 +43,14 @@
                         </div>
                         <div class="miniview" id="miniview-circular"></div>
                     </div>
-                    <div class="multiple-demo" id="demo-spring" data-id="spring">
-                        <strong style="color:black;">Spring Layout</strong>
+                    <div class="multiple-demo" id="demo-force-directed" data-id="force-directed">
+                        <strong style="color:black;">Force Directed Layout</strong>
                         <div class="controls">
                             <i class="fa fa-arrows selected-mode" mode="pan" title="Pan Mode"></i>
                             <i class="fa fa-pencil" mode="select" title="Select Mode"></i>
                             <i class="fa fa-home" reset title="Zoom To Fit"></i>
                         </div>
-                        <div class="miniview" id="miniview-spring"></div>
+                        <div class="miniview" id="miniview-force-directed"></div>
                     </div>
                     <div class="multiple-demo" id="demo-balloon" data-id="balloon">
                         <strong style="color:black;">Balloon Layout</strong>
