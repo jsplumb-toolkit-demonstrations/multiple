@@ -7,17 +7,18 @@ import {
     DotEndpoint,
     AnchorLocations,
     ready,
-    newInstance
-} from "@jsplumbtoolkit/browser-ui-vanilla-2"
+    newInstance,
+    MiniviewPlugin,
+    StateMachineConnector,
+    ObjectInfo, Node,
+    HierarchicalLayout,
+    BalloonLayout,
+    CircularLayout,
+    ForceDirectedLayout,
+    LassoPlugin
+} from "@jsplumbtoolkit/browser-ui"
 
 import {randomHierarchy, randomNode} from "jsplumbtoolkit-demo-support"
-import {MiniviewPlugin} from "@jsplumbtoolkit/browser-ui-plugin-miniview"
-import {StateMachineConnector} from "@jsplumb/connector-bezier"
-import {ObjectInfo, Node} from "@jsplumbtoolkit/core"
-import {HierarchicalLayout, BalloonLayout} from "@jsplumbtoolkit/layout-hierarchical"
-import {CircularLayout} from "@jsplumbtoolkit/layout-circular"
-import {ForceDirectedLayout} from "@jsplumbtoolkit/layout-force-directed"
-import {LassoPlugin} from "@jsplumbtoolkit/browser-ui-plugin-lasso"
 
 ready(() =>{
 
